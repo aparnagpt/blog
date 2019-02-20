@@ -1,0 +1,106 @@
+body {
+  background-color: lightgrey;
+}
+
+.App {
+  width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+  height: 100%;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.text {
+  white-space: pre-line;
+}
+
+button {
+  background-color: #0019af;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+button.create {
+  background-color: #4CAF50;
+}
+
+button.delete {
+  background-color: #C21807;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: auto;
+}
+
+.overview {
+  border: 1px solid black;
+  margin: 10px 5px;
+  padding: 10px;
+}
+
+.overview .title {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.overview .props {
+  display: flex;
+}
+
+.overview .props .actions {
+  margin-left: auto;
+}
+
+div.create {
+  padding: 0 20px;
+}
+
+div.create .label {
+  margin-top: 10px;
+}
+
+div.create input, div.create textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid grey;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+div.create textarea {
+  height: 200px;
+}
+
+div.create input:focus, div.create textarea:focus {
+  outline: 0;
+  border-color: #0019af;
+}
+
+div.create .actions {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.post .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post .actions {
+  margin-top: 30px;
+  text-align: center;
+}
